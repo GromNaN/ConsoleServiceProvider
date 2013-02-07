@@ -1,0 +1,14 @@
+{
+    "name": "lexpress/console-service-provider",
+    "description": "Console Service Provider for Silex Applications",
+    "require": {
+        "silex/silex": "1.0.x-dev",
+        "symfony/console": "2.2.x-dev"
+    },
+    "authors": [
+        {
+            "name": "Jerome TAMARELLE",
+            "email": "jtamarelle@groupe-exp.com"
+        }
+    ]
+}
