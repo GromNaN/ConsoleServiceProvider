@@ -18,10 +18,12 @@ class ConsoleServiceProvider implements ServiceProviderInterface
     {
         $app['console.name'] = 'UNKNOWN';
         $app['console.version'] = 'UNKNOWN';
+
         $app['console'] = $app->share(function () use ($app) {
             $app->boot();
 
             $console = new ConsoleApplication($app['console.name'], $app['console.version']);
+            $console->setCatchExceptions($app['debug']);
 
             foreach ($app->keys() as $key) {
                 if (false === strpos($key, 'command.')) {
