@@ -10,7 +10,7 @@ in [Silex](http://silex-project.org/) make easy to register command from any oth
 
 ## Services
 
-* __service:__ The Console Application. Use `$app['console']->run()`.
+* __console:__ The Console Application. Use `$app['console']->run()`.
 
 ## Registering
 
@@ -34,7 +34,7 @@ Services named with `command.*` are automatically registered to the console.
 
 ```php
 $app['command.propel.model.build'] = $app->share(function ($app) {
-    new Propel\Generator\Command\ModelBuildCommand();
+    return new Propel\Generator\Command\ModelBuildCommand();
 });
 ```
 
