@@ -24,6 +24,7 @@ class ConsoleServiceProvider implements ServiceProviderInterface
 
             $console = new ConsoleApplication($app['console.name'], $app['console.version']);
             $console->setCatchExceptions($app['debug']);
+            $console->setDispatcher($app['dispatcher']);
 
             foreach ($app->keys() as $key) {
                 if (false === strpos($key, 'command.')) {
