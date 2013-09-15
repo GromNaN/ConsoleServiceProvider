@@ -3,6 +3,7 @@
 
 use Silex\Application;
 use LExpress\Silex\ConsoleServiceProvider;
+use Symfony\Component\Console\Command\Command;
 
 require __DIR__.'/../vendor/autoload.php';
 set_time_limit(0);
@@ -11,7 +12,7 @@ $app = new Application();
 $app->register(new ConsoleServiceProvider());
 
 $app['command.crash'] = $app->share(function () {
-	$command = new Symfony\Component\Console\Command\Command('crash-test');
+	$command = new Command('crash-test');
 
 	$command->setCode(function () {
 		throw new \RuntimeException('Crash success!');
