@@ -1,6 +1,7 @@
 {
     "name": "lexpress/console-service-provider",
     "description": "Console Service Provider for Silex Applications",
+    "license": "MIT",
     "require": {
         "silex/silex": "~1.0",
         "symfony/console": "~2.3"
@@ -14,5 +15,10 @@
             "name": "Jérôme TAMARELLE",
             "email": "jerome@tamarelle.net"
         }
-    ]
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }

@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of LExpress / ConsoleServiceProvider.
+ *
+ * (c) Groupe Express Roularta - Jérôme Tamarelle
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace LExpress\Silex;
 
 use Silex\Application as SilexApplication;
@@ -10,7 +19,7 @@ use Symfony\Component\Console\Command\Command;
 /**
  * Basic ConsoleServiceProvider for Silex
  *
- * @author Jerome TAMARELLE <jerome@tamarelle.net>
+ * @author Jérôme TAMARELLE <jerome@tamarelle.net>
  */
 class ConsoleServiceProvider implements ServiceProviderInterface
 {
