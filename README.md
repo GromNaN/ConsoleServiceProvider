@@ -1,7 +1,7 @@
 # Console Service Provider for Silex
 
-The ConsoleServiceProvider enable [Symfony Console](http://symfony.com/doc/current/components/console/)
-in [Silex](http://silex-project.org/) make easy to register command from any other service provider.
+The ConsoleServiceProvider enable [Symfony Console](http://symfony.com/doc/current/components/console/introduction.html)
+in [Silex](http://silex.sensiolabs.org/) make easy to register command from any other service provider.
 
 ## Parameters
 
